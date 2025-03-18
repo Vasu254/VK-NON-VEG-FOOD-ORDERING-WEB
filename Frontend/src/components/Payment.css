@@ -1,0 +1,48 @@
+/* src/components/Payment.css */
+.payment-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for the page */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+.payment-details {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-item {
+  margin-bottom: 15px;
+}
+
+.payment-item h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.payment-item p {
+  color: #666;
+  font-size: 14px;
+}
+
+.pay-now-button {
+  background: #28a745; /* Green color */
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.pay-now-button:hover {
+  background: #218838; /* Darker green color */
+}

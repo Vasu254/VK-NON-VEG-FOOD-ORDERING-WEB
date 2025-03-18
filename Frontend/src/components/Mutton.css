@@ -1,0 +1,106 @@
+/* src/components/Mutton.css */
+.mutton-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.mutton-layouts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.layout {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(25% - 20px); /* 4 columns on desktop */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.layout:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.layout img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.layout h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.layout p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.button-group button {
+  background: #ff6f61;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+.button-group button:hover {
+  background: #ff3b2f;
+}
+
+.floating-cart-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #28a745;
+  border: none;
+  padding: 15px;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.floating-cart-icon:hover {
+  background: #218838;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .layout {
+    width: calc(50% - 20px); /* 2 columns on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .layout {
+    width: 100%; /* 1 column on very small screens */
+  }
+}
