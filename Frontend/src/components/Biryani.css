@@ -1,23 +1,49 @@
 /* src/components/Biryani.css */
+/* Remove extra space and ensure full width */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #eaf8fa;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+/* Main container */
 .biryani-page {
-  padding: 20px;
+  width: 100%;
+  padding: 50px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content vertically */
   text-align: center;
-  background-color: #f9f9f9; /* Light background for the page */
-  min-height: 100vh; /* Ensure it covers the full viewport height */
+  gap: 20px;
+  background-color: #f7fdff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(3, 3, 3);
 }
 
 .biryani-layouts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* Centers the cards */
   gap: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
 
+/* LayOuts of all */
 .layout {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
+  background: rgb(177, 220, 220);
+  border: 1px solid #b16161;
+  border-radius: 20px;
+  padding: 12px;
   width: calc(25% - 20px); /* 4 columns on desktop */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -35,30 +61,32 @@
 }
 
 .layout h2 {
-  color: #333;
-  font-size: 24px;
+  color: #070807;
+  font-size: 14px;
   margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .layout p {
-  color: #666;
+  color: #050000;
   font-size: 14px;
   margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .button-group button {
-  background: #ff6f61; /* Coral color */
+  background: #32b366; /* Coral color */
   border: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  margin: 5px;
+  margin: 4px;
   transition: background 0.3s;
 }
 
 .button-group button:hover {
-  background: #ff3b2f; /* Darker coral color */
+  background: #db212d; /* Darker coral color */
 }
 
 /* Floating Cart Icon */
@@ -66,13 +94,12 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #28a745; /* Green color */
+  background: #32b366; /* Coral color */
   border: none;
-  padding: 15px;
+  padding: 25px;
   color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* cursor: pointer; */
+  box-shadow: 0 4px 8px rgba(20, 5, 5, 0.2);
   transition: background 0.3s;
 }
 
@@ -84,8 +111,8 @@
   position: absolute;
   top: -5px;
   right: -5px;
-  background: red;
-  color: white;
+  background: rgb(11, 6, 6);
+  color: rgba(236, 246, 248, 0.83);
   border-radius: 50%;
   padding: 5px 10px;
   font-size: 12px;
@@ -94,6 +121,9 @@
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .layout {
-    width: calc(50% - 20px); /* 2 columns on mobile */
+    width: calc(90% - 0px); /* 2 columns on mobile */
   }
+}
+.manager-login {
+  color: #050000;
 }

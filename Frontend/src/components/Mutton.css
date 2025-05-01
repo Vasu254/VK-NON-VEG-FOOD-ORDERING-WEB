@@ -1,26 +1,37 @@
-/* src/components/Mutton.css */
+/* Mutton Page Container */
 .mutton-page {
-  padding: 20px;
-  text-align: center;
-  background-color: #f9f9f9;
+  background-color: #f7f4f4;
   min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  overflow-y: auto;
+  margin-left: -180px;
 }
 
+/* Layout Container */
 .mutton-layouts {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  margin-left: 20px;
 }
 
+/* Layout Box */
 .layout {
   background: white;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
-  width: calc(25% - 20px); /* 4 columns on desktop */
+  width: calc(25% - 20px); /* 4 layouts per row on desktop */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -30,28 +41,33 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Layout Image */
 .layout img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
+/* Layout Text */
 .layout h2 {
   color: #333;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .layout p {
   color: #666;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/* Button Group */
 .button-group button {
   background: #ff6f61;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -63,6 +79,7 @@
   background: #ff3b2f;
 }
 
+/* Floating Cart Icon */
 .floating-cart-icon {
   position: fixed;
   bottom: 20px;
@@ -81,26 +98,49 @@
   background: #218838;
 }
 
+/* Cart Count */
 .cart-count {
   position: absolute;
   top: -5px;
   right: -5px;
   background: red;
-  color: white;
+  color: rgb(248, 239, 239);
   border-radius: 50%;
   padding: 5px 10px;
   font-size: 12px;
 }
 
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
+/* 🌟 Responsive Design for Better Mobile & Tablet View */
+@media (max-width: 1024px) {
   .layout {
-    width: calc(50% - 20px); /* 2 columns on mobile */
+    width: calc(33.33% - 20px); /* 3 layouts per row on tablets */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .layout {
-    width: 100%; /* 1 column on very small screens */
+    width: calc(50% - 20px); /* 2 layouts per row on mobile */
+    margin-left: 60px;
   }
+}
+
+@media (max-width: 576px) {
+  .layout {
+    width: 100%; /* 1 layout per row on small screens */
+  }
+
+  .mutton-page {
+    padding: 30px;
+  }
+
+  .mutton-layouts {
+    gap: 20px;
+  }
+}
+
+/* Manager Login */
+.manager-login {
+  text-align: center;
+  color: #0d0404;
+  margin-left: 60px;
 }
