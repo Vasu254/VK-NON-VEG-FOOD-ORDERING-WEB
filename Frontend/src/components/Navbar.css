@@ -5,7 +5,11 @@
   align-items: center;
   width: 100vw; /* Ensure it covers the full width */
   height: 60px; /* Set a fixed height */
-  background-color: #333; /* Dark background for the navbar */
+  background: linear-gradient(
+    90deg,
+    #232526 0%,
+    #414345 100%
+  ); /* Gradient background for the navbar */
   color: rgb(205, 206, 236);
   font-family: "Times New Roman", Times, serif;
   padding: 10px 20px;
@@ -17,18 +21,48 @@
 }
 
 /* Left side of navbar */
-.navbar-left h1 {
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
   margin: 0;
-  font-size: 30px;
+  font-size: 2rem; /* Larger font size for the title */
   font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #000a; /* Text shadow for better readability */
+  transition: color 0.2s;
+}
+
+.navbar-left:hover .navbar-title {
+  color: #ff6f61; /* Change color on hover */
 }
 
 /* Right side of navbar (Cart Icon) */
 .navbar-right {
   font-size: 24px;
   cursor: pointer; /* Change cursor to pointer on hover */
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
 }
 
 .navbar-right:hover {
   opacity: 0.8; /* Slightly fade the cart icon on hover */
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 50px; /* Reduced height for mobile */
+    padding: 6px 10px; /* Reduced padding for mobile */
+  }
+  .navbar-title {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+  .navbar-right svg {
+    width: 28px;
+    height: 28px;
+  }
 }

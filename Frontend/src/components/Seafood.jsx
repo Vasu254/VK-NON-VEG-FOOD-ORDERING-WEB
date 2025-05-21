@@ -37,33 +37,6 @@ function Seafood() {
       fullPlatePrice: 150,
       halfPlatePrice: 90,
     },
-    {
-      id: 4,
-      name: "Lobster Bisque",
-      description: "Creamy soup with tender lobster pieces",
-      image:
-        "https://www.foodandwine.com/thmb/4fZ7K5J5v5Z5Z5Z5Z5Z5Z5Z5Z5=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lobster-bisque-FT-RECIPE0321-3a5f1e5a11a84a4d8a0f1a5c5f5b5b5e.jpg",
-      fullPlatePrice: 250,
-      halfPlatePrice: 140,
-    },
-    {
-      id: 5,
-      name: "Calamari",
-      description: "Crispy fried squid with garlic aioli",
-      image:
-        "https://www.thespruceeats.com/thmb/ujHzh5QlX5zZxX3h0Q0jXJ5X5JQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-grill-salmon-480709-hero-01-5c6b4b0046e0fb0001f5b2a2.jpg",
-      fullPlatePrice: 160,
-      halfPlatePrice: 95,
-    },
-    {
-      id: 6,
-      name: "Seafood Paella",
-      description: "Spanish rice dish with mixed seafood",
-      image:
-        "https://www.simplyrecipes.com/thmb/1uZj1XlV0hP5kK4S8rV3WkH2k2M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Fish-Tacos-LEAD-2-3a5f1e5a11a84a4d8a0f1a5c5f5b5b5e.jpg",
-      fullPlatePrice: 220,
-      halfPlatePrice: 130,
-    },
   ]);
 
   const authenticateManager = (password) => {
@@ -97,7 +70,7 @@ function Seafood() {
   };
 
   return (
-    <div className="seafood-page">
+    <div className="biryani-page seafood-bg">
       <h1>Enjoy Our Seafood Specialties</h1>
       <p>Fresh from the ocean to your plate</p>
 

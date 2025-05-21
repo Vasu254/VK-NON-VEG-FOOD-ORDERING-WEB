@@ -1,4 +1,8 @@
 /* src/App.css or src/index.css */
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 html {
   margin: 0;
@@ -8,17 +12,25 @@ html {
   overflow-y: auto; /* Allow vertical scrolling */
   font-family: Arial, sans-serif;
 }
-.home-page {
-  background-image: url("/background-image.jpg"); /* Add your background image */
-  background-size: cover; /* Ensure the image covers the entire screen */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  min-height: 100vh; /* Ensure it covers the full viewport height */
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  color: white;
-  text-align: center;
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #eee;
+}
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 4px;
+}
+
+.home-page,
+.biryani-page,
+.mutton-page,
+.seafood-page,
+.cart-container,
+.payment-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 80px;
 }
 
 .container {
@@ -88,4 +100,15 @@ html {
   .box p {
     font-size: 12px;
   }
+}
+
+/* Remove negative margins and min-width hacks */
+.home-page,
+.biryani-page,
+.mutton-page,
+.seafood-page,
+.cart-container,
+.payment-page {
+  margin-left: 0 !important;
+  min-width: 0 !important;
 }

@@ -24,21 +24,109 @@ html {
   justify-content: center; /* Centers content vertically */
   text-align: center;
   gap: 20px;
-  background-color: #f7fdff;
+  /* Change background to match mutton page */
+  background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+  color: #fff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(3, 3, 3);
 }
 
-.biryani-layouts {
+.biryani-page.veg-biryani-bg {
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+}
+.biryani-page.mutton-bg {
+  background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+}
+.biryani-page.seafood-bg {
+  background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+}
+.biryani-page.paneer-bg {
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+}
+.biryani-page.curries-bg {
+  background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+}
+
+.biryani-page {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centers the cards */
-  gap: 20px;
-  width: 100%;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  z-index: 0;
 }
 
-/* LayOuts of all */
+.floating-cart-icon.right {
+  right: 20px;
+  left: auto;
+}
+.floating-cart-icon.left {
+  left: 20px;
+  right: auto;
+}
+
+@media (max-width: 900px) {
+  .biryani-page.paneer-bg,
+  .biryani-page.curries-bg,
+  .biryani-page.veg-biryani-bg,
+  .biryani-page.seafood-bg {
+    padding: 0;
+    min-width: 100vw;
+    width: 100vw;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .layout {
+    width: calc(90% - 0px); /* 2 columns on mobile */
+  }
+}
+.manager-login {
+  color: #050000;
+}
+
+/* Floating Cart Icon */
+.floating-cart-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #32b366; /* Coral color */
+  border: none;
+  padding: 25px;
+  color: white;
+  /* cursor: pointer; */
+  box-shadow: 0 4px 8px rgba(20, 5, 5, 0.2);
+  transition: background 0.3s;
+}
+
+.floating-cart-icon:hover {
+  background: #218838; /* Darker green color */
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: rgb(11, 6, 6);
+  color: rgba(236, 246, 248, 0.83);
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Layouts of all */
 .layout {
   background: rgb(177, 220, 220);
   border: 1px solid #b16161;
@@ -87,43 +175,4 @@ html {
 
 .button-group button:hover {
   background: #db212d; /* Darker coral color */
-}
-
-/* Floating Cart Icon */
-.floating-cart-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #32b366; /* Coral color */
-  border: none;
-  padding: 25px;
-  color: white;
-  /* cursor: pointer; */
-  box-shadow: 0 4px 8px rgba(20, 5, 5, 0.2);
-  transition: background 0.3s;
-}
-
-.floating-cart-icon:hover {
-  background: #218838; /* Darker green color */
-}
-
-.cart-count {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background: rgb(11, 6, 6);
-  color: rgba(236, 246, 248, 0.83);
-  border-radius: 50%;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-  .layout {
-    width: calc(90% - 0px); /* 2 columns on mobile */
-  }
-}
-.manager-login {
-  color: #050000;
 }

@@ -1,34 +1,26 @@
 // src/components/Home.jsx
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
-import "./Home.css"; // Import the CSS file for Home component
+import { useNavigate } from "react-router-dom";
+import "./Home.css";
 
 function Home() {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   return (
     <div className="home-page">
+      <h1 className="home-title">Welcome to Delight Biryani</h1>
       <div className="container">
-        <div className="box" onClick={() => navigate("/biryani")}>
-          {" "}
-          {/* Make the entire layout clickable */}
-          <h2>Biriyani</h2>
-          <p>Indulge in flavorful biriyani recipes.</p>
-          <button>Explore</button>
+        <div className="box biryani-box" onClick={() => navigate("/biryani")}>
+          <h2>Biryani Specials</h2>
+          <p>Explore our delicious biryani dishes.</p>
         </div>
-        <div className="box" onClick={() => navigate("/Mutton")}>
-          {" "}
-          {/* Make the entire layout clickable */}
-          <h2>Mutton</h2>
-          <p>Savor the richness of mutton dishes</p>
-          <button>Explore</button>
+        <div className="box mutton-box" onClick={() => navigate("/mutton")}>
+          <h2>Mutton Delights</h2>
+          <p>Try our mouth-watering mutton dishes.</p>
         </div>
-        <div className="box" onClick={() => navigate("/Seafood")}>
-          {" "}
-          {/* Make the entire layout clickable */}
-          <h2>Seafood</h2>
-          <p>Indulge in flavorful biriyani recipes.</p>
-          <button>Explore</button>
+        <div className="box seafood-box" onClick={() => navigate("/seafood")}>
+          <h2>Seafood Treats</h2>
+          <p>Fresh and flavorful seafood options.</p>
         </div>
       </div>
     </div>
@@ -36,33 +28,3 @@ function Home() {
 }
 
 export default Home;
-// import React from "react";
-// import { useNavigate } from "react-router-dom";
-// import "./Home.css";
-
-// function Home() {
-//   const navigate = useNavigate();
-
-//   return (
-//     <div className="home-page">
-//       <h1>Welcome to Our Restaurant</h1>
-//       <p>Explore our delicious menu options.</p>
-
-//       <div className="menu-options">
-//         <button onClick={() => navigate("/biryani")}>Biryani Specials</button>
-//         <button onClick={() => navigate("/mutton")}>Mutton Specials</button>
-//         <button onClick={() => navigate("/seafood")}>
-//           Sea Food Specials
-//         </button>{" "}
-//         {/* Add button for SeaFood */}
-//       </div>
-
-//       {/* Optional: Add a link to the cart */}
-//       <div className="floating-cart-icon" onClick={() => navigate("/cart")}>
-//         🛒
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Home;
