@@ -1,299 +1,432 @@
-/* Shared Page Container Styles */
-.mutton-page,
-.biryani-page {
-  min-height: 100vh;
-  min-width: 200vw;
-  box-sizing: border-box;
-  padding-top: 80px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  padding: 20px;
-  overflow-y: auto;
-  margin-left: 0 !important;
+/* Global Scrolling Behavior */
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* Webkit scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Base Styles - Full Viewport Coverage */
 .mutton-page {
-  background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
-}
-
-.biryani-page {
-  background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
-}
-
-/* Layout Container */
-.mutton-layouts,
-.biryani-layouts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  max-width: 1400px;
+  min-height: 100vh;
   width: 100%;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-/* Layout Box */
-.layout {
-  background: rgba(255, 255, 255, 0.95);
-  border: none;
-  border-radius: 15px;
-  padding: 25px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  position: relative;
-  overflow: hidden;
-}
-
-.layout:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Layout Image */
-.layout img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  transition: transform 0.5s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.layout:hover img {
-  transform: scale(1.05);
-}
-
-/* Layout Text */
-.layout h2 {
-  color: #1a1a1a;
-  font-size: 1.5rem;
-  margin-bottom: 12px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.layout p {
-  color: #4a4a4a;
-  font-size: 0.95rem;
-  margin-bottom: 20px;
-  font-family: "Inter", sans-serif;
-  line-height: 1.6;
-  min-height: 60px;
-}
-
-/* Button Group */
-.button-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.button-group button {
-  background: linear-gradient(45deg, #2193b0, #6dd5ed);
-  border: none;
-  padding: 12px 20px;
+  max-width: 100vw;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
   color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
-.mutton-page .button-group button {
-  background: linear-gradient(45deg, #ff512f, #dd2476);
-}
-
-.button-group button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(33, 147, 176, 0.3);
-}
-
-.mutton-page .button-group button:hover {
-  box-shadow: 0 5px 15px rgba(255, 81, 47, 0.3);
-}
-
-.button-group button::after {
+.biryani-page::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://img.freepik.com/free-photo/chicken-biryani-traditional-indian-dish-spices-raita-sauce-wooden-table_123827-20801.jpg")
+    center/cover;
+  opacity: 0.15;
+  z-index: 0;
+  background-attachment: fixed;
+}
+
+.mutton-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: calc(100vh - 40px); /* Adjust for padding */
+}
+
+/* Header Styles */
+.mutton-page h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.mutton-page h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  border-radius: 2px;
+}
+
+.page-description {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 15px 25px 15px 50px;
+  border-radius: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+/* Mutton Grid */
+.mutton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.mutton-card {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.mutton-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.mutton-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.price-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
+    135deg,
+    rgba(255, 94, 98, 0.95),
+    rgba(255, 153, 102, 0.95)
   );
-  transition: 0.5s;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.button-group button:hover::after {
-  left: 100%;
+.card-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Floating Cart Icon */
-.floating-cart-icon {
+.card-content h3 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 12px;
+  padding: 0 5px;
+  margin-top: 15px;
+}
+
+.btn {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  z-index: 1;
+  min-width: 120px;
+}
+
+.half-plate {
+  background: #fff;
+  color: #ff9966;
+  border: 2px solid #ff9966;
+  position: relative;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.full-plate {
+  background: #fff;
+  color: #ff5e62;
+  border: 2px solid #ff5e62;
+  position: relative;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.half-plate:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #ff9966, #ff7f50);
+  border-color: #ff9966;
+}
+
+.full-plate:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #ff5e62, #ff4757);
+  border-color: #ff5e62;
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.btn:hover::after {
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+}
+
+/* Add ripple effect on click */
+.btn.ripple::after {
+  transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Floating Cart Button */
+.floating-cart-btn {
   position: fixed;
   bottom: 30px;
   right: 30px;
   width: 60px;
   height: 60px;
-  background: linear-gradient(45deg, #2193b0, #6dd5ed);
-  border: none;
-  color: white;
   border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(255, 94, 98, 0.4);
+  transition: all 0.3s ease;
   z-index: 1000;
 }
 
-.mutton-page .floating-cart-icon {
-  background: linear-gradient(45deg, #ff512f, #dd2476);
+.floating-cart-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(255, 94, 98, 0.6);
 }
 
-.floating-cart-icon:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-/* Cart Count */
 .cart-count {
   position: absolute;
-  top: -8px;
-  right: -8px;
-  background: #ff4757;
+  top: -5px;
+  right: -5px;
+  background: #333;
   color: white;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  padding: 4px;
-  min-width: 24px;
-  height: 24px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* 🌟 Responsive Design for Better Mobile & Tablet View */
 /* Responsive Design */
-@media (max-width: 1200px) {
-  .mutton-layouts,
-  .biryani-layouts {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 15px;
-  }
-}
-
 @media (max-width: 768px) {
-  .mutton-page,
-  .biryani-page {
-    padding: 15px;
+  .mutton-page h1 {
+    font-size: 2.2rem;
   }
 
-  .layout {
-    padding: 20px;
+  .page-description {
+    font-size: 1rem;
+    padding: 0 15px;
   }
 
-  .layout h2 {
-    font-size: 1.3rem;
+  .mutton-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
   }
 
-  .layout p {
-    font-size: 0.9rem;
-    min-height: auto;
+  .card-buttons {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 10px;
   }
 
-  .button-group button {
-    padding: 10px 15px;
-    font-size: 0.85rem;
+  .btn {
+    padding: 14px;
+    min-height: 48px;
+    font-size: 1rem;
+    width: 100%;
+    touch-action: manipulation;
   }
-}
 
-@media (max-width: 576px) {
-  .floating-cart-icon {
-    width: 50px;
-    height: 50px;
+  /* Improve touch feedback on mobile */
+  .btn:active {
+    transform: translateY(2px);
+    transition: transform 0.1s;
+  }
+
+  .floating-cart-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.2rem;
     bottom: 20px;
     right: 20px;
-    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mutton-page h1 {
+    font-size: 1.8rem;
   }
 
-  .cart-count {
-    min-width: 20px;
-    height: 20px;
-    font-size: 12px;
+  .search-bar {
+    margin-bottom: 25px;
   }
 
-  .manager-login {
+  .search-bar input {
+    padding: 12px 20px 12px 40px;
+  }
+
+  .mutton-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mutton-content {
     padding: 15px;
   }
-
-  .manager-login input {
-    padding: 10px 15px;
-    font-size: 0.9rem;
-  }
-}
-
-/* Manager Login */
-.manager-login {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px 30px;
-  border-radius: 15px;
-  margin: 20px auto;
-  text-align: center;
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  max-width: 400px;
-  width: 90%;
-}
-
-.manager-login h3 {
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.manager-login input {
-  width: 100%;
-  padding: 12px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-.manager-login input:focus {
-  outline: none;
-  border-color: rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.manager-login input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
 }

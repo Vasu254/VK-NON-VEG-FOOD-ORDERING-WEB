@@ -7,7 +7,7 @@ import "./Seafood.css";
 function Seafood() {
   const navigate = useNavigate();
   const [cart, setCart] = useState([]);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const [seafoodItems, setSeafoodItems] = useState([
     {
@@ -39,23 +39,9 @@ function Seafood() {
     },
   ]);
 
-  const authenticateManager = (password) => {
-    if (password === "vasu!@09") {
-      setIsAuthenticated(true);
-      toast.success("Authentication successful! You can now update prices.");
-    } else {
-      toast.error("Incorrect password. Only the manager can update prices.");
-    }
-  };
-
-  const updatePrices = (id, fullPlatePrice, halfPlatePrice) => {
-    setSeafoodItems((prevItems) =>
-      prevItems.map((item) =>
-        item.id === id ? { ...item, fullPlatePrice, halfPlatePrice } : item
-      )
-    );
-    toast.success("Prices updated successfully!");
-  };
+  const filteredItems = seafoodItems.filter((item) =>
+    item.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   const addToCart = (item, plateType) => {
     const price =
@@ -74,66 +60,35 @@ function Seafood() {
       <h1>Enjoy Our Seafood Specialties</h1>
       <p>Fresh from the ocean to your plate</p>
 
-      {!isAuthenticated && (
-        <div className="manager-login">
-          <b>Manager Login</b>
-          <input
-            type="password"
-            placeholder="Enter password"
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                authenticateManager(e.target.value);
-              }
-            }}
-          />
-        </div>
-      )}
+      {/* Search Bar */}
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search seafood dishes..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
 
       <div className="seafood-layouts">
-        {seafoodItems.map((item) => (
+        {filteredItems.map((item) => (
           <div className="layout" key={item.id}>
             <img src={item.image} alt={item.name} />
             <h2>{item.name}</h2>
             <p>{item.description}</p>
 
-            {isAuthenticated && (
-              <div className="price-update-form">
-                <label>
-                  Full Plate Price:
-                  <input
-                    type="number"
-                    value={item.fullPlatePrice}
-                    onChange={(e) =>
-                      updatePrices(
-                        item.id,
-                        Number(e.target.value),
-                        item.halfPlatePrice
-                      )
-                    }
-                  />
-                </label>
-                <label>
-                  Half Plate Price:
-                  <input
-                    type="number"
-                    value={item.halfPlatePrice}
-                    onChange={(e) =>
-                      updatePrices(
-                        item.id,
-                        item.fullPlatePrice,
-                        Number(e.target.value)
-                      )
-                    }
-                  />
-                </label>
-              </div>
-            )}
-
+            {/* Add to Cart Buttons */}
             <div className="button-group">
-              <button onClick={() => addToCart(item, "full")}>
+              <button
+                className="btn full-plate"
+                onClick={() => addToCart(item, "full")}
+              >
                 Full Plate (₹{item.fullPlatePrice})
               </button>
-              <button onClick={() => addToCart(item, "half")}>
+              <button
+                className="btn half-plate"
+                onClick={() => addToCart(item, "half")}
+              >
                 Half Plate (₹{item.halfPlatePrice})
               </button>
             </div>

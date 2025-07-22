@@ -2,14 +2,22 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./Mutton.css"; // Ensure this CSS file is created and imported
+import "./Biryani.css";
 
 function Mutton() {
   const navigate = useNavigate();
   const [cart, setCart] = useState([]);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const [muttonItems, setMuttonItems] = useState([
+    {
+      id: 1,
+      name: "Mutton Rogan Josh",
+      description: "Aromatic and rich mutton curry with traditional spices.",
+      image: "https://example.com/mutton-rogan-josh.jpg", // Replace with actual image URL
+      fullPlatePrice: 120,
+      halfPlatePrice: 80,
+    },
     {
       id: 1,
       name: "Mutton Rogan Josh",
@@ -39,23 +47,11 @@ function Mutton() {
     // Add more items as needed
   ]);
 
-  const authenticateManager = (password) => {
-    if (password === "vasu!@09") {
-      setIsAuthenticated(true);
-      toast.success("Authentication successful! You can now update prices.");
-    } else {
-      toast.error("Incorrect password. Only the manager can update prices.");
-    }
-  };
-
-  const updatePrices = (id, fullPlatePrice, halfPlatePrice) => {
-    setMuttonItems((prevItems) =>
-      prevItems.map((item) =>
-        item.id === id ? { ...item, fullPlatePrice, halfPlatePrice } : item
-      )
-    );
-    toast.success("Prices updated successfully!");
-  };
+  const filteredItems = muttonItems.filter(
+    (item) =>
+      item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   const addToCart = (item, plateType) => {
     const price =
@@ -74,70 +70,36 @@ function Mutton() {
       <h1>Mutton Specials</h1>
       <p>Explore our delicious mutton dishes.</p>
 
-      {/* Manager Login */}
-      {!isAuthenticated && (
-        <div className="manager-login">
-          <h3>Manager Login</h3>
-          <input
-            type="password"
-            placeholder="Enter password"
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                authenticateManager(e.target.value);
-              }
-            }}
-          />
-        </div>
-      )}
+      {/* Search Bar */}
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search for dishes..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
 
       {/* Mutton Items */}
       <div className="mutton-layouts">
-        {muttonItems.map((item) => (
+        {filteredItems.map((item) => (
           <div className="layout" key={item.id}>
             <img src={item.image} alt={item.name} />
             <h2>{item.name}</h2>
             <p>{item.description}</p>
 
-            {/* Price Update Form (Visible only to authenticated manager) */}
-            {isAuthenticated && (
-              <div className="price-update-form">
-                <label>
-                  Full Plate Price:
-                  <input
-                    type="number"
-                    value={item.fullPlatePrice}
-                    onChange={(e) =>
-                      updatePrices(
-                        item.id,
-                        Number(e.target.value),
-                        item.halfPlatePrice
-                      )
-                    }
-                  />
-                </label>
-                <label>
-                  Half Plate Price:
-                  <input
-                    type="number"
-                    value={item.halfPlatePrice}
-                    onChange={(e) =>
-                      updatePrices(
-                        item.id,
-                        item.fullPlatePrice,
-                        Number(e.target.value)
-                      )
-                    }
-                  />
-                </label>
-              </div>
-            )}
-
             {/* Add to Cart Buttons */}
             <div className="button-group">
-              <button onClick={() => addToCart(item, "full")}>
+              <button
+                className="btn full-plate"
+                onClick={() => addToCart(item, "full")}
+              >
                 Full Plate (₹{item.fullPlatePrice})
               </button>
-              <button onClick={() => addToCart(item, "half")}>
+              <button
+                className="btn half-plate"
+                onClick={() => addToCart(item, "half")}
+              >
                 Half Plate (₹{item.halfPlatePrice})
               </button>
             </div>
