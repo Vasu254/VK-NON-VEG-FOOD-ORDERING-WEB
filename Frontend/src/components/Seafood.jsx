@@ -15,7 +15,7 @@ function Seafood() {
       name: "Grilled Salmon",
       description: "Freshly grilled salmon with lemon and herbs",
       image:
-        "https://www.thespruceeats.com/thmb/ujHzh5QlX5zZxX3h0Q0jXJ5X5JQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-grill-salmon-480709-hero-01-5c6b4b0046e0fb0001f5b2a2.jpg",
+        "https://s3.eu-central-1.amazonaws.com/qatar-delicious/ItemsImages/ItemImage_3661_(0).jpg",
       fullPlatePrice: 200,
       halfPlatePrice: 120,
     },
@@ -24,7 +24,7 @@ function Seafood() {
       name: "Prawn Curry",
       description: "Spicy prawn curry with coconut milk",
       image:
-        "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/shaheen_ali/Prawns_Coconut_Curry_Recipe.jpg",
+        "https://s3.eu-central-1.amazonaws.com/qatar-delicious/ItemsImages/ItemImage_3661_(0).jpg",
       fullPlatePrice: 180,
       halfPlatePrice: 100,
     },
@@ -33,7 +33,7 @@ function Seafood() {
       name: "Fish Tacos",
       description: "Crispy fish with fresh salsa in soft tortillas",
       image:
-        "https://www.simplyrecipes.com/thmb/1uZj1XlV0hP5kK4S8rV3WkH2k2M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Fish-Tacos-LEAD-2-3a5f1e5a11a84a4d8a0f1a5c5f5b5b5e.jpg",
+        "https://s3.eu-central-1.amazonaws.com/qatar-delicious/ItemsImages/ItemImage_3661_(0).jpg",
       fullPlatePrice: 150,
       halfPlatePrice: 90,
     },

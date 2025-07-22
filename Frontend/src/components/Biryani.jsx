@@ -12,38 +12,31 @@ function Mutton() {
   const [muttonItems, setMuttonItems] = useState([
     {
       id: 1,
-      name: "Mutton Rogan Josh",
-      description: "Aromatic and rich mutton curry with traditional spices.",
-      image: "https://example.com/mutton-rogan-josh.jpg", // Replace with actual image URL
+      name: "Chicken Biryani",
+      description: "Aromatic and rich chicken curry with traditional spices.",
+      image:
+        "https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01-750x750.jpg", // Replace with actual image URL
       fullPlatePrice: 120,
       halfPlatePrice: 80,
     },
     {
       id: 1,
-      name: "Mutton Rogan Josh",
-      description: "Aromatic and rich mutton curry with traditional spices.",
-      image: "https://example.com/mutton-rogan-josh.jpg", // Replace with actual image URL
+      name: "Chicken Biryani",
+      description: "Aromatic and rich chicken curry with traditional spices.",
+      image:
+        "https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01-750x750.jpg", // Replace with actual image URL
       fullPlatePrice: 120,
       halfPlatePrice: 80,
     },
     {
       id: 2,
-      name: "Mutton Biryani",
-      description: "Flavorful biryani made with succulent mutton pieces.",
-      image: "https://example.com/mutton-biryani.jpg", // Replace with actual image URL
+      name: "Chicken Biryani",
+      description: "Flavorful biryani made with succulent chicken pieces.",
+      image:
+        "https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01-750x750.jpg", // Replace with actual image URL
       fullPlatePrice: 150,
       halfPlatePrice: 100,
     },
-    {
-      id: 1,
-      name: "Chicken Tikka Masala",
-      description: "Rich and flavorful biryani with succulent mutton.",
-      image:
-        "https://scontent-pnq1-1.cdninstagram.com/v/t1.15752-9/482694131_3974490562810755_5934161960834529847_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=lQTn95uj2pQQ7kNvgEpHhEs&_nc_oc=AdisLfWKr98J03wDaQNX1Ujmoj-JkG-FHg8h4IM9WO6rz7taOrVmWXwWZ3Qo91w6B6E&_nc_zt=23&_nc_ht=scontent-pnq1-1.cdninstagram.com&oh=03_Q7cD1wFmLYlMEB2a4bLQDQVzDUWAqXgaZw6RNKkSzeVR40DeDw&oe=67FA280E",
-      fullPlatePrice: 100, // Default full plate price
-      halfPlatePrice: 70, // Default half plate price
-    },
-
     // Add more items as needed
   ]);
 

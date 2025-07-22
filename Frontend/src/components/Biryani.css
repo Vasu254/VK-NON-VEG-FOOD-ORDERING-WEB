@@ -93,6 +93,9 @@ body {
   background: linear-gradient(90deg, #ff9966, #ff5e62);
   border-radius: 2px;
 }
+.biryani-page mutton-bg {
+  color: #ff4757;
+}
 
 .page-description {
   text-align: center;
