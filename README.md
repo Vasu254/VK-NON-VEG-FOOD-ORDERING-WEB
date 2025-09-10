@@ -2,6 +2,7 @@
 
 A modern, full-featured e-commerce platform built with Next.js, featuring multi-vendor support, admin panel, and comprehensive order management.
 
+
 ## 🚀 Features
 
 ### For Customers

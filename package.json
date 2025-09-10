@@ -10,10 +10,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-<<<<<<< HEAD
     "@clerk/nextjs": "^6.31.10",
-=======
->>>>>>> cbb68b6b9d23b8b8b6cefd01c4f10f79fbfb7f8e
     "@reduxjs/toolkit": "^2.8.2",
     "date-fns": "^4.1.0",
     "lucide-react": "^0.525.0",
