@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # Contributing to GoCart
 
 Thank you for considering contributing to **GoCart**!
+=======
+>>>>>>> cbb68b6b9d23b8b8b6cefd01c4f10f79fbfb7f8e
 We welcome contributions from everyone, whether it's fixing a bug, adding a new feature, or optimizing the codebase.
 
 ---
@@ -67,4 +70,8 @@ Here are some areas where you can contribute:
 
 ---
 
+<<<<<<< HEAD
 We're excited to see your contributions! 🚀
+=======
+We're excited to see your contributions! 🚀
+>>>>>>> cbb68b6b9d23b8b8b6cefd01c4f10f79fbfb7f8e
