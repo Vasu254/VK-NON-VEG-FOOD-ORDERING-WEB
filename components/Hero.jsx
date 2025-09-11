@@ -40,7 +40,7 @@ const Hero = () => {
           <p className='text-3xl font-bold bg-gradient-to-r from-slate-800 to-green-700 bg-clip-text text-transparent max-w-40'>Popular Dishes</p>
           <p className='flex items-center gap-1 mt-4'>View Menu <ArrowRightIcon className='group-hover:ml-2 transition-all' size={18} /> </p>
         </div>
-        <Image className='w-32 rounded-lg' src={assets.hero_product_img1} alt="Popular Dish" width={128} height={128} />
+        <Image className='w-50 rounded-lg' src={assets.hero_product_img1} alt="Popular Dish" />
       </div>
 
       <div className='flex-1 flex items-center justify-between w-full bg-pink-200 rounded-3xl p-6 px-8 group'>
@@ -48,7 +48,7 @@ const Hero = () => {
           <p className='text-3xl font-bold bg-gradient-to-r from-slate-800 to-pink-600 bg-clip-text text-transparent max-w-40'>Special Offers</p>
           <p className='flex items-center gap-1 mt-4'>Grab Now <ArrowRightIcon className='group-hover:ml-2 transition-all' size={18} /> </p>
         </div>
-        <Image className='w-32 rounded-lg' src={assets.hero_product_img2} alt="Special Offer" width={128} height={128} />
+        <Image className='w-50 rounded-lg' src={assets.hero_product_img2} alt="Special Offer" width={128} height={128} />
       </div>
     </div>
   </div>

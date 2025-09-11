@@ -4,13 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.31.10",
+    "@neondatabase/serverless": "^1.0.1",
+    "@prisma/adapter-neon": "^6.16.0",
+    "@prisma/client": "^6.16.0",
     "@reduxjs/toolkit": "^2.8.2",
     "date-fns": "^4.1.0",
     "lucide-react": "^0.525.0",
@@ -19,11 +23,14 @@
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",
     "react-redux": "^9.2.0",
-    "recharts": "^3.1.2"
+    "recharts": "^3.1.2",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/ws": "^8.18.1",
     "prettier": "^3.6.2",
+    "prisma": "^6.16.0",
     "tailwindcss": "^4"
   }
 }
