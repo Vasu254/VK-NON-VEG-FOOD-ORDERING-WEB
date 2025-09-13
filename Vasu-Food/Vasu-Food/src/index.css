@@ -1,0 +1,152 @@
+body {
+  background-image: url(img2.jpg); /* Replace 'your-image.jpg' with the path to your image file */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-attachment: fixed; /* Fixed background */
+  /* margin-top: 20px; */
+  /* opacity: 0.8; */
+}
+
+.content {
+  margin-top: 100px;
+  padding: 20px;
+  color: black;
+  font-size:150%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-right: 500px;
+}
+.content1 {
+  margin-top: 100px;
+  padding: 20px;
+  color: black;
+  font-size:150%;
+  box-shadow: 20px;
+  border-radius: 100px;
+  background-color: rgb(248, 213, 167);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-right: 500px;
+}
+li {
+  list-style: none;
+}
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+h5 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: x-large;
+}
+.custom-opacity {
+  opacity: 0.9 ; /* Set the opacity to 50% */
+}
+
+.nav a.active{
+  text-decoration: none;
+  font-weight: 800;
+  color: rgb(9, 66, 172);
+  background-color: rgb(15, 154, 40);
+  border-radius:  30px;
+}
+#itemsSearch{
+  margin-left: 40%;
+  margin-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: rgb(7, 86, 86);
+  background-color: rgb(107, 220, 26);
+}
+#itembtn{
+  text-decoration: none;
+  color: black;
+}
+h2{
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(7, 30, 22);
+}
+#restaurentsearch{
+  color: rgb(16, 10, 2);
+  font-size:larger;
+  font-family: 'Times New Roman', Times, serif;
+  font:bolder ;
+  background-color: rgb(254, 255, 252);
+  padding: 12px;
+  box-shadow: 10px 10px 5px lightblue;
+}
+.card-img-container {
+  width: 100%;
+  max-height: 225px; /* Set your desired max height here */
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+#checkout{
+  background-color: rgb(244, 240, 236);
+  opacity: 0.9;
+  font-size: larger;
+  color: rgb(28, 92, 8);
+}
+#footer{
+  background-color: rgb(104, 102, 102);
+  color: black;
+}
+.widget-list-link{
+  text-decoration: none;
+  color: rgb(173, 165, 246);
+}
+#download{
+  /* text-align: center; */
+  text-decoration: none;
+  color: azure;
+}
+.download{
+  background-color: rgb(218, 161, 88);
+  border-radius: 20px;
+}
+.vertical-line {
+  width: 2px;
+  height: 100%;
+  background-color: #f2e1e1;
+  position: absolute;
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+.cart-background{
+  background-color: rgb(237, 243, 241);
+}
+/* Custom CSS for Bootstrap tooltips */
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-item .tooltip-inner {
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-item:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.fixed-height-container {
+  height: 300px; /* Set the desired height here */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+}

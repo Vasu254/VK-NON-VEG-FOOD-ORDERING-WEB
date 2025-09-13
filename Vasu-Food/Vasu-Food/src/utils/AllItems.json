@@ -1,0 +1,363 @@
+{
+  "items": [
+    {
+      "itemName": "Masala Dosa",
+      "description": "Thin, crispy rice crepe stuffed with spiced potato mixture.",
+      "priceInIndia": "₹80",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/bxz7qyiqayjnvutereko"
+    },
+    {
+      "itemName": "Paneer Tikka",
+      "description": "Marinated Indian cottage cheese grilled or cooked in a tandoor.",
+      "priceInIndia": "₹120",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5be4932b3b743230ccd295ba6f8def14"
+    },
+
+    {
+      "itemName": "Baingan Bharta",
+      "description": "Roasted eggplant mashed and cooked with spices.",
+      "priceInIndia": "₹80",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0ed1003e060fd205a1a2b316a121906d"
+    },
+    {
+      "itemName": "Gajar Ka Halwa",
+      "description": "Sweet carrot pudding garnished with nuts.",
+      "priceInIndia": "₹120",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/irfklagngjcgtfryswmh"
+    },
+    {
+      "itemName": "Hyderabadi Chicken 65",
+      "description": "Spicy deep-fried chicken, a popular snack in Hyderabad.",
+      "priceInIndia": "₹160",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/uazif3gvno7tcm9i2vsk"
+    },
+    {
+      "itemName": "Sali Boti",
+      "description": "Parsi dish with tender mutton in a sweet and spicy gravy.",
+      "priceInIndia": "₹220",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/d5c94a19c9e857a5fce2e9245a537787"
+    },
+    {
+      "itemName": "Bengali Fish Curry",
+      "description": "Fish curry with mustard seeds and spices, popular in Bengal.",
+      "priceInIndia": "₹190",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/aseptjofl6nqkueuccyf"
+    },
+    {
+      "itemName": "Kashmiri Rogan Josh",
+      "description": "Lamb dish with a rich and aromatic gravy, a specialty of Kashmir.",
+      "priceInIndia": "₹240",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nqthnyutvid8eeeibmxt"
+    },
+    {
+      "itemName": "Murgh Musallam",
+      "description": "Whole chicken stuffed with rice and cooked in a rich gravy.",
+      "priceInIndia": "₹220",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/vgfht6nhtrdu7jgslgv8"
+    },
+
+    {
+      "itemName": "Mutton Curry",
+      "description": "Spicy goat meat curry, regional variations apply.",
+      "priceInIndia": "₹210",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/s9vhfbsplfensljanc3d"
+    },
+    {
+      "itemName": "Fish Curry",
+      "description": "Fish cooked in a spicy and tangy gravy.",
+      "priceInIndia": "₹180",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/jb7ekif2y6orgrbf72bq"
+    },
+    {
+      "itemName": "Amritsari Fish",
+      "description": "Deep-fried fish marinated in spices, a specialty of Amritsar.",
+      "priceInIndia": "₹220",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nvrca8yx7efw9bnjviea"
+    },
+    {
+      "itemName": "Chettinad Chicken",
+      "description": "Spicy chicken curry from Chettinad, Tamil Nadu.",
+      "priceInIndia": "₹190",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/oknvx5khrijhwaqtnizj"
+    },
+    {
+      "itemName": "Parsi Chicken Sali",
+      "description": "Chicken curry with crispy potato sticks, a Parsi dish.",
+      "priceInIndia": "₹200",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/c50322c3f885916777ec548e5506355d"
+    },
+    {
+      "itemName": "Chole Bhature",
+      "description": "Spicy chickpea curry served with deep-fried bread.",
+      "priceInIndia": "₹100",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/pha9la7zqbl9ng3qhpwt"
+    },
+    {
+      "itemName": "Aloo Tikki Chaat",
+      "description": "Spicy potato fritters served with chutneys.",
+      "priceInIndia": "₹60",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/06086646d484e3ca99ce6b2c72da2b8d"
+    },
+    {
+      "itemName": "Papdi Chaat",
+      "description": "Crispy fried dough wafers with yogurt, chutneys, and spices.",
+      "priceInIndia": "₹70",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/tdxqtbxxysdk0ljhoh9b"
+    },
+    {
+      "itemName": "Bhel Puri",
+      "description": "A savory snack mix with puffed rice, chutneys, and veggies.",
+      "priceInIndia": "₹50",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/2844e9725e1dd046505b8f79a628133c"
+    },
+    {
+      "itemName": "Samosa",
+      "description": "Deep-fried pastry pockets filled with spiced potatoes and peas.",
+      "priceInIndia": "₹40",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/3559ca2fc2c3ba587f79dc2c4e97778f"
+    },
+    {
+      "itemName": "Golgappa/Pani Puri",
+      "description": "Hollow, crispy balls filled with spicy tamarind water, potato, and chickpeas.",
+      "priceInIndia": "₹30",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/vardvb7fmlk9kceafpyn"
+    },
+    {
+      "itemName": "Vada Pav",
+      "description": "Spicy potato fritter served in a bun.",
+      "priceInIndia": "₹35",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/f3106e8ca54b798d8f8c0f500527564f"
+    },
+    {
+      "itemName": "Tandoori Roti",
+      "description": "Indian flatbread cooked in a tandoor.",
+      "priceInIndia": "₹10",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/mktundddpbcceik6xk6r"
+    },
+    {
+      "itemName": "Idli and Sambar",
+      "description": "Steamed rice cakes served with lentil-based vegetable stew.",
+      "priceInIndia": "₹60",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/6b61e10cebc0dd6f902dfc2553d5b20a"
+    },
+    {
+      "itemName": "Chana Masala",
+      "description": "Spicy chickpea curry.",
+      "priceInIndia": "₹70",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ef88546094b410e7bf4e17cce747d4d1"
+    },
+    {
+      "itemName": "Dal Makhani",
+      "description": "Creamy black lentils simmered with spices.",
+      "priceInIndia": "₹90",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/myvvj5xjqi3tr4bozp3o"
+    },
+    {
+      "itemName": "Palak Paneer",
+      "description": "Paneer (cottage cheese) cooked in a creamy spinach sauce.",
+      "priceInIndia": "₹110",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/yldcdus74brylmymtyhf"
+    },
+    {
+      "itemName": "Mushroom Tikka",
+      "description": "Marinated mushrooms cooked in a tandoor.",
+      "priceInIndia": "₹130",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/htaligbbh6bbniqqpdwq"
+    },
+    {
+      "itemName": "Chettinad Pepper Chicken",
+      "description": "Spicy and peppery chicken curry from Chettinad.",
+      "priceInIndia": "₹190",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/4f20955c92c13d872ac76af180cd5ab8"
+    },
+    {
+      "itemName": "Dhaba Chicken Curry",
+      "description": "Spicy chicken curry inspired by Punjabi roadside dhabas.",
+      "priceInIndia": "₹180",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/otnxc0gy0u43odnvci12"
+    },
+    {
+      "itemName": "Aloo Paratha",
+      "description": "Whole wheat flatbread stuffed with spiced potatoes.",
+      "priceInIndia": "₹50",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/53617f8a75ef6921123a193a404c1c67"
+    },
+    {
+      "itemName": "Dhokla",
+      "description": "Steamed and fermented gram flour cakes.",
+      "priceInIndia": "₹40",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/9f6789c377ea4d32ec21671433d0895b"
+    },
+    {
+      "itemName": "Pav Bhaji",
+      "description": "Spicy vegetable curry served with buttered rolls.",
+      "priceInIndia": "₹70",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/mia2by4frpcnkfvlyjnf"
+    },
+
+    {
+      "itemName": "Chicken Biryani",
+      "description": "Fragrant rice dish cooked with spices and tender chicken pieces.",
+      "priceInIndia": "₹180",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ykc6besh38qgtowdwwsl"
+    },
+    {
+      "itemName": "Tandoori Chicken",
+      "description": "Marinated chicken cooked in a clay oven (tandoor).",
+      "priceInIndia": "₹160",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/g3mfdsdjm8vtk8wsrcch"
+    },
+    {
+      "itemName": "Butter Chicken",
+      "description": "Creamy tomato-based gravy with succulent chicken pieces.",
+      "priceInIndia": "₹200",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nlagb1hom6tpxtzaayhf"
+    },
+    {
+      "itemName": "Rogan Josh",
+      "description": "Lamb dish from Kashmir with rich and aromatic gravy.",
+      "priceInIndia": "₹220",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/d420b7d296c1105202d2e8cd8d424ebd"
+    },
+    {
+      "itemName": "Gosht Biryani",
+      "description": "Fragrant rice dish with tender mutton pieces and spices.",
+      "priceInIndia": "₹240",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/9ff90f6cb19242cf6e0232101e72b00a"
+    },
+    {
+      "itemName": "Malabar Fish Curry",
+      "description": "Spicy fish curry from Malabar, Kerala.",
+      "priceInIndia": "₹200",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/78b2ea86c69ed0ff9a932d9d0f79316c"
+    },
+
+    {
+      "itemName": "Chicken Tikka Masala",
+      "description": "Grilled chicken in a creamy tomato-based sauce.",
+      "priceInIndia": "₹190",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/4a6b9bd8da4c478fd0aceb453d1a5430"
+    },
+    {
+      "itemName": "Kebabs",
+      "description": "Skewered and grilled meat (chicken, lamb, or beef).",
+      "priceInIndia": "₹160",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ft05kdlvxghd4du4hlrt"
+    },
+    {
+      "itemName": "Hyderabadi Dum Biryani",
+      "description": "Fragrant rice dish with slow-cooked marinated meat.",
+      "priceInIndia": "₹220",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/e4876f7a4de6190675c8b706b2e37619"
+    },
+    {
+      "itemName": "Goan Fish Curry",
+      "description": "Fish curry with coconut milk and spices.",
+      "priceInIndia": "₹190",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xtigfvdhoicnmryzycbv"
+    },
+    {
+      "itemName": "Kadai Chicken",
+      "description": "Chicken cooked with bell peppers and spices in a wok (kadai).",
+      "priceInIndia": "₹180",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/eljrzqrndtkejqstvxaq"
+    },
+    {
+      "itemName": "Lamb Korma",
+      "description": "Lamb cooked in a creamy, nut-based gravy.",
+      "priceInIndia": "₹240",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/p3vykgiso6swnuxphcmt"
+    },
+    {
+      "itemName": "Chicken Vindaloo",
+      "description": "Spicy chicken curry with vinegar and red chilies.",
+      "priceInIndia": "₹200",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/h5k3lxdgmoi8bcfo5kgs"
+    },
+    {
+      "itemName": "Tandoori Lamb Chops",
+      "description": "Marinated lamb chops cooked in a tandoor.",
+      "priceInIndia": "₹250",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wt7obdg2s248dkt2psrt"
+    },
+    {
+      "itemName": "Prawn Curry",
+      "description": "Prawns cooked in a flavorful coconut-based gravy.",
+      "priceInIndia": "₹220",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ddn53f4yrcsxt0vlosqf"
+    },
+    {
+      "itemName": "Nihari",
+      "description": "Slow-cooked meat stew, often eaten for breakfast.",
+      "priceInIndia": "₹190",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/cfjuxauxlipcgogjv7ig"
+    },
+    {
+      "itemName": "Andhra Chicken Curry",
+      "description": "Spicy chicken curry from the Andhra region.",
+      "priceInIndia": "₹180",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/lsg0z6kksywpdbmq6hqp"
+    },
+    {
+      "itemName": "Kolkata Fish Curry",
+      "description": "Fish curry with mustard seeds and spices, popular in Kolkata.",
+      "priceInIndia": "₹200",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/y7xjkjqtwwczjokll35q"
+    },
+    {
+      "itemName": "Tandoori Prawns",
+      "description": "Marinated prawns cooked in a tandoor.",
+      "priceInIndia": "₹250",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/af5e8d613ebc3e42491871119ec12c88"
+    },
+    {
+      "itemName": "Keema Pav",
+      "description": "Spiced minced meat (often beef or mutton) served with bread rolls.",
+      "priceInIndia": "₹160",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ccf6523b4853c7fe78d3b6db0137e78a"
+    },
+    {
+      "itemName": "Kerala Fish Curry",
+      "description": "Spicy fish curry with coconut milk, a specialty of Kerala.",
+      "priceInIndia": "₹190",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xtigfvdhoicnmryzycbv"
+    },
+    {
+      "itemName": "Rajma Chawal",
+      "description": "Kidney bean curry served with rice.",
+      "priceInIndia": "₹100",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/4beb46329355848e1f791fb1d7f5437f"
+    },
+
+    {
+      "itemName": "Lal Maas",
+      "description": "Spicy mutton curry from Rajasthan with red chilies.",
+      "priceInIndia": "₹220",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/d0c319d4cd4b9b6f23b1b19696fd3ff0"
+    },
+    {
+      "itemName": "Pomfret Curry",
+      "description": "Fish curry with pomfret fish in a spicy gravy.",
+      "priceInIndia": "₹190",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/dfla65n9et50dw3vtzhe"
+    },
+    {
+      "itemName": "Andhra Fish Fry",
+      "description": "Spicy deep-fried fish, a specialty of Andhra Pradesh.",
+      "priceInIndia": "₹180",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/qm3shyofhxod6jylzatm"
+    },
+    {
+      "itemName": "Chapli Kebab",
+      "description": "Spiced ground meat (often beef or mutton) shaped into patties and pan-fried.",
+      "priceInIndia": "₹160",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/2164406ebdd579f32ddfaeebc95637d4"
+    },
+    {
+      "itemName": "Bhuna Gosht",
+      "description": "Spicy and flavorful dry mutton curry.",
+      "priceInIndia": "₹220",
+      "photoURL": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/bd6a1f6ae17b9bfdabc5d4bd35b3d7d7"
+    }
+  ]
+}
